@@ -13,7 +13,18 @@
 		EAD4B3F52613B7DF00A009E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAD4B3F42613B7DF00A009E9 /* Assets.xcassets */; };
 		EAD4B3F82613B7DF00A009E9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAD4B3F72613B7DF00A009E9 /* Preview Assets.xcassets */; };
 		EAD4B3FB2613B7DF00A009E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAD4B3F92613B7DF00A009E9 /* LaunchScreen.storyboard */; };
+		EAD4B40B2613DE0000A009E9 /* TravisCITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD4B40A2613DE0000A009E9 /* TravisCITests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EAD4B40D2613DE0000A009E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EAD4B3E32613B7DE00A009E9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAD4B3EA2613B7DE00A009E9;
+			remoteInfo = TravisCI;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		EAD4B3EB2613B7DE00A009E9 /* TravisCI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravisCI.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +35,20 @@
 		EAD4B3F72613B7DF00A009E9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EAD4B3FA2613B7DF00A009E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EAD4B3FC2613B7DF00A009E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAD4B4082613DE0000A009E9 /* TravisCITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravisCITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAD4B40A2613DE0000A009E9 /* TravisCITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravisCITests.swift; sourceTree = "<group>"; };
+		EAD4B40C2613DE0000A009E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		EAD4B3E82613B7DE00A009E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAD4B4052613DE0000A009E9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				EAD4B3ED2613B7DE00A009E9 /* TravisCI */,
+				EAD4B4092613DE0000A009E9 /* TravisCITests */,
 				EAD4B3EC2613B7DE00A009E9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				EAD4B3EB2613B7DE00A009E9 /* TravisCI.app */,
+				EAD4B4082613DE0000A009E9 /* TravisCITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -75,6 +98,15 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		EAD4B4092613DE0000A009E9 /* TravisCITests */ = {
+			isa = PBXGroup;
+			children = (
+				EAD4B40A2613DE0000A009E9 /* TravisCITests.swift */,
+				EAD4B40C2613DE0000A009E9 /* Info.plist */,
+			);
+			path = TravisCITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -95,6 +127,24 @@
 			productReference = EAD4B3EB2613B7DE00A009E9 /* TravisCI.app */;
 			productType = "com.apple.product-type.application";
 		};
+		EAD4B4072613DE0000A009E9 /* TravisCITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAD4B4112613DE0000A009E9 /* Build configuration list for PBXNativeTarget "TravisCITests" */;
+			buildPhases = (
+				EAD4B4042613DE0000A009E9 /* Sources */,
+				EAD4B4052613DE0000A009E9 /* Frameworks */,
+				EAD4B4062613DE0000A009E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EAD4B40E2613DE0000A009E9 /* PBXTargetDependency */,
+			);
+			name = TravisCITests;
+			productName = TravisCITests;
+			productReference = EAD4B4082613DE0000A009E9 /* TravisCITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -106,6 +156,10 @@
 				TargetAttributes = {
 					EAD4B3EA2613B7DE00A009E9 = {
 						CreatedOnToolsVersion = 12.4;
+					};
+					EAD4B4072613DE0000A009E9 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = EAD4B3EA2613B7DE00A009E9;
 					};
 				};
 			};
@@ -123,6 +177,7 @@
 			projectRoot = "";
 			targets = (
 				EAD4B3EA2613B7DE00A009E9 /* TravisCI */,
+				EAD4B4072613DE0000A009E9 /* TravisCITests */,
 			);
 		};
 /* End PBXProject section */
@@ -135,6 +190,13 @@
 				EAD4B3FB2613B7DF00A009E9 /* LaunchScreen.storyboard in Resources */,
 				EAD4B3F82613B7DF00A009E9 /* Preview Assets.xcassets in Resources */,
 				EAD4B3F52613B7DF00A009E9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAD4B4062613DE0000A009E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,7 +213,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EAD4B4042613DE0000A009E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAD4B40B2613DE0000A009E9 /* TravisCITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EAD4B40E2613DE0000A009E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EAD4B3EA2613B7DE00A009E9 /* TravisCI */;
+			targetProxy = EAD4B40D2613DE0000A009E9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		EAD4B3F92613B7DF00A009E9 /* LaunchScreen.storyboard */ = {
@@ -323,6 +401,46 @@
 			};
 			name = Release;
 		};
+		EAD4B40F2613DE0000A009E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4SG7LJKUAM;
+				INFOPLIST_FILE = TravisCITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.project.TravisCITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TravisCI.app/TravisCI";
+			};
+			name = Debug;
+		};
+		EAD4B4102613DE0000A009E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4SG7LJKUAM;
+				INFOPLIST_FILE = TravisCITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.project.TravisCITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TravisCI.app/TravisCI";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -340,6 +458,15 @@
 			buildConfigurations = (
 				EAD4B4002613B7DF00A009E9 /* Debug */,
 				EAD4B4012613B7DF00A009E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAD4B4112613DE0000A009E9 /* Build configuration list for PBXNativeTarget "TravisCITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAD4B40F2613DE0000A009E9 /* Debug */,
+				EAD4B4102613DE0000A009E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
