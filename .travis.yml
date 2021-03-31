@@ -2,7 +2,8 @@ language: swift
 # os: osx
 osx_image: xcode12.2
 
-before_script: ls
+before_script:
+  - ls
 
 xcode_project: TravisCI.xcodeproj # path to your xcodeproj folder
 xcode_scheme: TravisCITests
