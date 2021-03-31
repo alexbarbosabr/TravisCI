@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		EAD4B3EF2613B7DE00A009E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD4B3EE2613B7DE00A009E9 /* AppDelegate.swift */; };
-		EAD4B3F12613B7DE00A009E9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD4B3F02613B7DE00A009E9 /* SceneDelegate.swift */; };
-		EAD4B3F32613B7DE00A009E9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD4B3F22613B7DE00A009E9 /* ContentView.swift */; };
 		EAD4B3F52613B7DF00A009E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAD4B3F42613B7DF00A009E9 /* Assets.xcassets */; };
 		EAD4B3F82613B7DF00A009E9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAD4B3F72613B7DF00A009E9 /* Preview Assets.xcassets */; };
 		EAD4B3FB2613B7DF00A009E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAD4B3F92613B7DF00A009E9 /* LaunchScreen.storyboard */; };
@@ -29,8 +27,6 @@
 /* Begin PBXFileReference section */
 		EAD4B3EB2613B7DE00A009E9 /* TravisCI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravisCI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAD4B3EE2613B7DE00A009E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EAD4B3F02613B7DE00A009E9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EAD4B3F22613B7DE00A009E9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EAD4B3F42613B7DF00A009E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EAD4B3F72613B7DF00A009E9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EAD4B3FA2613B7DF00A009E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -80,8 +76,6 @@
 			isa = PBXGroup;
 			children = (
 				EAD4B3EE2613B7DE00A009E9 /* AppDelegate.swift */,
-				EAD4B3F02613B7DE00A009E9 /* SceneDelegate.swift */,
-				EAD4B3F22613B7DE00A009E9 /* ContentView.swift */,
 				EAD4B3F42613B7DF00A009E9 /* Assets.xcassets */,
 				EAD4B3F92613B7DF00A009E9 /* LaunchScreen.storyboard */,
 				EAD4B3FC2613B7DF00A009E9 /* Info.plist */,
@@ -208,8 +202,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAD4B3EF2613B7DE00A009E9 /* AppDelegate.swift in Sources */,
-				EAD4B3F12613B7DE00A009E9 /* SceneDelegate.swift in Sources */,
-				EAD4B3F32613B7DE00A009E9 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,7 +361,7 @@
 				DEVELOPMENT_TEAM = 4SG7LJKUAM;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = TravisCI/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -391,7 +383,7 @@
 				DEVELOPMENT_TEAM = 4SG7LJKUAM;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = TravisCI/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
