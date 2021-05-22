@@ -14,8 +14,10 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Force Xcode 12
-      run: sudo xcode-select -switch /Applications/Xcode_12.2.app
+      run: sudo xcode-select -switch /Applications/Xcode_12.4.app
+    - name: Clean      
+      run: xcodebuild clean -project TravisCI.xcodeproj -scheme TravisCI
     - name: Build
-      run: swift build -v
+      run: xcodebuild build -project TravisCI.xcodeproj -scheme TravisCI
     - name: Run tests
-      run: swift test -v
+      run: xcodebuild -project TravisCI.xcodeproj -scheme TravisCI -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone SE (2nd),OS=14.4' test
