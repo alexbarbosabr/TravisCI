@@ -1,5 +1,5 @@
 language: swift
-# os: osx
+os: osx
 osx_image: xcode12.2
 xcode_project: TravisCI.xcodeproj # path to your xcodeproj folder
 xcode_scheme: TravisCI
