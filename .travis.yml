@@ -6,5 +6,5 @@ before_script:
   - ls
 
 xcode_project: TravisCI.xcodeproj # path to your xcodeproj folder
-xcode_scheme: TravisCITests
+xcode_scheme: TravisCI
 xcode_destination: platform=iOS Simulator,OS=12.2,name=iPhone X
