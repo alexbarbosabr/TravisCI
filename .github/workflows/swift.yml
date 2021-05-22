@@ -18,6 +18,7 @@ jobs:
     - name: Clean      
       run: xcodebuild clean -project TravisCI.xcodeproj -scheme TravisCI
     - name: Build
-      run: xcodebuild build -project TravisCI.xcodeproj -scheme TravisCI
+#       run: xcodebuild build -project TravisCI.xcodeproj -scheme TravisCI
+      run: xcodebuild -list
     - name: Run tests
       run: xcodebuild -project TravisCI.xcodeproj -scheme TravisCI -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone SE (2nd),OS=14.4' test
