@@ -46,3 +46,12 @@ jobs:
         -sdk iphonesimulator \
         -destination 'platform=iOS Simulator,name=iPhone SE (2nd generation),OS=14.4' \
         -enableCodeCoverage YES
+        
+    - name: Coverage
+      uses: iansu/codecov-action-node@v1
+      with:
+        token: ${{secrets.CODECOV_TOKEN}} #required
+        file: ./coverage.xml #optional
+        flags: unittests #optional
+        name: codecov-umbrella #optional
+        fail_ci_if_error: true
