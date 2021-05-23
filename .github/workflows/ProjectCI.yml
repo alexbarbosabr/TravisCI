@@ -20,6 +20,11 @@ jobs:
     steps:
     - name: Checkout repository 
       uses: actions/checkout@v2
+      
+    - name: Set Gems
+      run: |
+        gem install bundler
+        bundle install
     
     - name: Force Xcode 12
       run: sudo xcode-select -switch /Applications/Xcode_12.4.app
