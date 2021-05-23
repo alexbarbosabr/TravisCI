@@ -26,19 +26,20 @@ jobs:
       
     - name: Clean Xcode
       run: |
+        set -o pipefail
         xcodebuild clean \
         -project TravisCI.xcodeproj \
         -scheme TravisCI
       
     - name: Build project
-      run:
+      run: |
         xcodebuild build \
         -project TravisCI.xcodeproj \
         -scheme TravisCI \
         -destination 'platform=iOS Simulator,name=iPhone SE (2nd generation),OS=14.4'
       
     - name: Run tests
-      run:
+      run: |
         xcodebuild test \
         -project TravisCI.xcodeproj \
         -scheme TravisCI \
