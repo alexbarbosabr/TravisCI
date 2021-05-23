@@ -27,7 +27,7 @@ jobs:
     - name: Clean Xcode
       run: |
         set -o pipefail
-        xcodebuild clean \
+        xcodebuild \
         -project TravisCI.xcodeproj \
         -scheme TravisCI
       
