@@ -33,6 +33,7 @@ jobs:
       
     - name: Build project
       run: |
+        slather setup
         xcodebuild build \
         -project TravisCI.xcodeproj \
         -scheme TravisCI \
@@ -46,6 +47,9 @@ jobs:
         -sdk iphonesimulator \
         -destination 'platform=iOS Simulator,name=iPhone SE (2nd generation),OS=14.4' \
         -enableCodeCoverage YES
+        
+    - name: Coverage report
+      run: slather coverage -x --binary-basename 'TravisCI'
         
     - name: Coverage
       uses: codecov/codecov-action@v1
