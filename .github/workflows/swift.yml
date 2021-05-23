@@ -5,21 +5,29 @@ on:
     branches: [ main ]
   pull_request:
     branches: [ main ]
+# on: [push, pull_request]
+# on: 
+#   push:
+#     branches:
+#       - master
 
 jobs:
   build:
-
+    name: App Build
     runs-on: macos-latest
 
     steps:
+    - name: Checkout repository 
     - uses: actions/checkout@v2
+    
     - name: Force Xcode 12
       run: sudo xcode-select -switch /Applications/Xcode_12.4.app
-    - name: Clean      
+      
+    - name: Clean Xcode 🛁     
       run: xcodebuild clean -project TravisCI.xcodeproj -scheme TravisCI
-    - name: Build
-#       run: xcodebuild build -project TravisCI.xcodeproj -scheme TravisCI
+      
+    - name: Build project
       run: xcodebuild build -project TravisCI.xcodeproj -scheme TravisCI -destination 'platform=iOS Simulator,name=iPhone SE (2nd generation),OS=14.4'
-#       run: xcodebuild -list
-    - name: Run tests
+      
+    - name: Run tests 🏃
       run: xcodebuild -project TravisCI.xcodeproj -scheme TravisCI -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone SE (2nd generation),OS=14.4' test -enableCodeCoverage YES
