@@ -55,6 +55,10 @@ jobs:
         
     - name: Coverage report
       run: slather coverage -x --binary-basename 'TravisCI'
+      
+    #!/bin/bash
+    - name: PWD
+      run: echo "the PWD is :\n$(ls)"
         
     - name: Coverage
       uses: codecov/codecov-action@v1
