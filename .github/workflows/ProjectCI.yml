@@ -67,8 +67,8 @@ jobs:
       uses: codecov/codecov-action@v1
       with:
         token: ${{secrets.CODECOV_TOKEN}} #required
-#         file: ./Coverage/cobertura_xml #optional
-        file: Coverage/cobertura_xml #optional
+        file: ./Coverage/cobertura.xml #optional
+#         file: Coverage/cobertura_xml #optional
         flags: unittests #optional
         name: codecov-ci #optional
         fail_ci_if_error: true
