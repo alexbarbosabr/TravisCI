@@ -2,7 +2,7 @@ coverage_service: coverage_xml
 xcodeproj: TravisCI.xcodeproj
 input_format: profdata
 output_directory: Coverage/
-build_directory: build/Build/
+# build_directory: build/Build/
 scheme: TravisCI
 ignore:
   - TravisCITests/*
