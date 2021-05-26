@@ -30,7 +30,6 @@ jobs:
         xcodebuild clean \
         -project TravisCI.xcodeproj \
         -scheme TravisCI
-        | xcpretty
       
     - name: Build project
       run: |
