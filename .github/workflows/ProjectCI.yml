@@ -53,7 +53,6 @@ jobs:
 #       run: echo "the PWD is :\n$(ls)"
 
 #     - name: PWD Coverage
-#       run: echo "Coverage path - $(ls Coverage)"
         
     - name: Coverage
       uses: codecov/codecov-action@v1
