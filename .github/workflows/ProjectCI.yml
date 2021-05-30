@@ -17,13 +17,13 @@ jobs:
         gem install bundler
         bundle install
     
-    - name: Force Xcode 12
+    - name: Set Xcode 12
       run: sudo xcode-select -switch /Applications/Xcode_12.4.app
       
     - name: Clean Xcode
       run: |
         set -o pipefail
-        xcodebuild \
+        xcodebuild clean \
         -project TravisCI.xcodeproj \
         -scheme TravisCI \
         | xcpretty
