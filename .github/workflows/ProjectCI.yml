@@ -23,27 +23,31 @@ jobs:
     - name: Clean Xcode
       run: |
         set -o pipefail
-        xcodebuild clean \
+        xcodebuild \
         -project TravisCI.xcodeproj \
-        -scheme TravisCI
+        -scheme TravisCI \
         | xcpretty
       
     - name: Build project
       run: |
+        set -o pipefail
         slather setup
         xcodebuild build \
         -project TravisCI.xcodeproj \
         -scheme TravisCI \
-        -destination 'platform=iOS Simulator,name=iPhone SE (2nd generation),OS=14.4'
+        -destination 'platform=iOS Simulator,name=iPhone SE (2nd generation),OS=14.4' \
+        | xcpretty
       
     - name: Run tests
       run: |
+        set -o pipefail
         xcodebuild test \
         -project TravisCI.xcodeproj \
         -scheme TravisCI \
         -sdk iphonesimulator \
         -destination 'platform=iOS Simulator,name=iPhone SE (2nd generation),OS=14.4' \
-        -enableCodeCoverage YES
+        -enableCodeCoverage YES \
+        | xcpretty
         
     - name: Coverage report
       run: slather coverage -x --binary-basename 'TravisCI'
